@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1c9c73"
+    tools:context=".ExternalResultActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="8dp"
+        android:id="@+id/card_view01"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/summary_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/chango"
+                android:text="STUDENT RESULT SUMMARY"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:padding="6dp"
+                android:layout_below="@+id/summary_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Examination:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/exam_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="B.TECH(CSE,3RD SEM,2016)"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="ResultType:" />
+
+                    <TextView
+                        android:id="@+id/result_typeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="3rd Sem Odd-(2017-18)"/>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Reg No:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/regd_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="1601229166"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="Student Name:" />
+
+                    <TextView
+                        android:id="@+id/stu_nameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Sagen Sakam Bhim Soren"/>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="College Name:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/clg_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="DRIEMS, CUTTACK"/>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Branch Name:"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/branch_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="B.Tech.(CSE)"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="Date of Publicaton:" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/dop_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="10 Mar 2018"/>
+                </TableRow>
+            </TableLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/card_view01"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="25dp"
+                        android:text="SN"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="11dp"
+                        android:text="SubCode"/>
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="-10dp"
+                        android:text="Subject"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_marginLeft="-30dp"
+                        android:layout_height="25dp"
+                        android:text="Credit"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_marginLeft="-2dp"
+                        android:layout_height="25dp"
+                        android:text="Grade"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                </TableRow>
+                <!--2nd-->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="24dp"
+                        android:layout_height="25dp"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        />
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="60dp"
+                        android:textSize="12sp"
+                        android:layout_marginRight="20dp"
+                        android:text="PCS3D001"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="-11dp"
+                        android:text="Artificial Intelligence"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_marginLeft="-6dp"
+                        android:layout_height="25dp"
+                        android:text="F(Ex)"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+                  <!--3rd-->
+                <!--4th-->
+                <TableRow>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="60dp"
+                        android:textSize="12sp"
+                        android:layout_marginRight="20dp"
+                        android:text="PCS3I001"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="-11dp"
+                        android:text="Discrete Structures"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_marginLeft="-6dp"
+                        android:layout_height="25dp"
+                        android:text="A"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+                <!--5th-->
+
+                <TableRow>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="3"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="60dp"
+                        android:textSize="12sp"
+                        android:layout_marginRight="20dp"
+                        android:text="PCS3I101"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="-11dp"
+                        android:text="STLD"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_marginLeft="-6dp"
+                        android:layout_height="25dp"
+                        android:text="A"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+                <!--6th-->
+                <TableRow>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="60dp"
+                        android:textSize="12sp"
+                        android:layout_marginRight="20dp"
+                        android:text="PCS3I102"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="-11dp"
+                        android:text="OOP Java"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_marginLeft="-6dp"
+                        android:layout_height="25dp"
+                        android:text="A"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+                <!--7th-->
+                <TableRow>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="5"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="60dp"
+                        android:textSize="12sp"
+                        android:layout_marginRight="20dp"
+                        android:text="PCS3I103"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="-11dp"
+                        android:text="System Programming"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_marginLeft="-6dp"
+                        android:layout_height="25dp"
+                        android:text="F(Fx)"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+                <!--8th-->
+                <TableRow>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="6"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="60dp"
+                        android:textSize="12sp"
+                        android:layout_marginRight="20dp"
+                        android:text="PCS3I103"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="-11dp"
+                        android:text="Software Engineering"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_marginLeft="-6dp"
+                        android:layout_height="25dp"
+                        android:text="A"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+                <!--9th-->
+                <TableRow>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="7"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="60dp"
+                        android:textSize="12sp"
+                        android:layout_marginRight="20dp"
+                        android:text="PCS3I104"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="-11dp"
+                        android:text="Organizational Behavior"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="4"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_marginLeft="-6dp"
+                        android:layout_height="25dp"
+                        android:text="F(Ex)"
+                        android:textAlignment="center"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="70dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text=""/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:layout_width="120dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="10dp"
+                        android:text="Total"/>
+                    <TextView
+                        android:layout_height="25dp"
+                        android:text="27"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_height="25dp"
+                        android:text="7.54"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                </TableRow>
+
+
+
+            </TableLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="620dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="#1c9c73"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:id="@+id/top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/student_nameTv"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:text="Student name"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="80dp"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_below="@id/student_nameTv"
+                android:id="@+id/regedNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RegdNo"
+                android:layout_marginLeft="110dp"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/dob_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regedNo"
+                android:layout_marginLeft="130dp"
+                android:textSize="24sp"
+                android:layout_marginTop="1dp"
+                android:text="DOB"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/card_view"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow
+                    android:background="#1c9c73">
+                    <TextView
+                        android:layout_width="200dp"
+                        android:text="Subjects"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Marks"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/cellborder">
+                    <TextView
+
+                        android:id="@+id/sub_am"
+                        android:layout_width="200dp"
+                        android:text="Applied Math"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mark_am"
+                        android:layout_width="wrap_content"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/cellborder">
+                    <TextView
+                        android:id="@+id/sub_coa"
+                        android:layout_width="200dp"
+                        android:text="COA"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mark_coa"
+                        android:layout_width="wrap_content"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/cellborder">
+                    <TextView
+                        android:id="@+id/sub_da"
+                        android:layout_width="200dp"
+                        android:text="DAA"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mark_da"
+                        android:layout_width="160dp"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/cellborder">
+                    <TextView
+                        android:id="@+id/sub_ds"
+                        android:layout_width="200dp"
+                        android:text="DS"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mark_ds"
+                        android:layout_width="160dp"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+                </TableRow>
+
+                <TableRow
+                    android:background="@drawable/cellborder">
+                    <TextView
+                        android:id="@+id/sub_daa"
+                        android:layout_width="200dp"
+                        android:text="DA"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mark_daa"
+                        android:layout_width="160dp"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+                </TableRow>
+                <TableRow
+                    android:background="@drawable/cellborder">
+                    <TextView
+                        android:id="@+id/sub_total"
+                        android:layout_width="200dp"
+                        android:text="TOTAL"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/mark_total"
+                        android:layout_width="160dp"
+                        android:text="30"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"/>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+</RelativeLayout>

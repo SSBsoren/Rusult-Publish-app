@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "118293220148",
+    "firebase_url": "https://friebaseapp-e9c3a.firebaseio.com",
+    "project_id": "friebaseapp-e9c3a",
+    "storage_bucket": "friebaseapp-e9c3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118293220148:android:46f829c06df20f59",
+        "android_client_info": {
+          "package_name": "com.soren.sagen.driemsfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118293220148-fdnf4u783bmm7qihujdpeckq4sim221m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBbQoP6bdBIm8qt1HRn7g5OQWVbFk-sVs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1c9c73"
+    tools:context="com.soren.sagen.driemsfirebase.EnterRegIdActivty">
+
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/sessionTv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Exam Session:"
+        android:textSize="23sp"
+        android:textAlignment="center"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@+id/sessionTv"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="135dp"
+        android:background="#fff"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:autofillHints="@string/appbar_scrolling_view_behavior"
+        />
+    <TextView
+        android:id="@+id/reg_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Reg.No"/>
+    <EditText
+        android:id="@+id/enter_regdnoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="125dp"
+        android:layout_below="@+id/reg_Tv"
+        android:textSize="23sp"
+        android:background="#fff"
+        android:hint="Enter Regd.No"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/enter_regdnoTv"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="DOB:"
+        android:id="@+id/dob_textView" />
+
+    <EditText
+        android:layout_below="@id/dob_textView"
+        android:layout_width="200dp"
+        android:background="#fff"
+        android:hint="Enter DOB"
+        android:textAlignment="center"
+        android:layout_height="40dp"
+        android:id="@+id/in_date"
+        android:layout_marginLeft="90dp"
+        />
+
+    <Button
+        android:layout_below="@+id/in_date"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/ic_date"
+        android:layout_toRightOf="@+id/in_date"
+        android:layout_toEndOf="@+id/in_date"
+        android:id="@+id/btn_date"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="150dp"
+        android:onClick="submitFun"
+        android:text="submit"/>
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
